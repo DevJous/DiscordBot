@@ -1,10 +1,8 @@
 # Usa una imagen base con Node.js
 FROM node:18
 
-# Instala FFmpeg para reproducir música
 RUN apt-get -y update
 RUN apt-get -y upgrade
-#RUN apt-get install -y ffmpeg
 #RUN apt-get clean
 
 # Crea un directorio de trabajo
