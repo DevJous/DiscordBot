@@ -18,8 +18,8 @@ MrJous es un bot de música diseñado para ofrecer una experiencia musical senci
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/mrjous.git
-cd mrjous
+git clone https://github.com/DevJous/DiscordBot.git
+cd DiscordBot
 ```
 
 ### 2. Instalar dependencias
@@ -32,7 +32,15 @@ npm install
 
 ### 3. Configurar el archivo `.env`
 
-Crea un archivo `.env` en la raíz del proyecto y añade tus configuraciones personalizadas, como tu token de Discord.
+Crea un archivo `.env` en la raíz del proyecto y añade tus configuraciones personalizadas, como tu token y ID del cliente de Discord.
+
+> [!NOTE]
+> Recuerda obtener el token y el ID de cliente en la página de [desarrolladores de Discord](https://discord.com/developers/applications).
+
+```env
+DISCORD_TOKEN="<Ingresa aqui tu token de Discord>"
+DISCORD_CLIENT_ID="<Ingresa aqui tu Discord client Id>"
+```
 
 ---
 
