@@ -48,7 +48,7 @@ DISCORD_CLIENT_ID="<Ingresa aqui tu Discord client Id>"
 
 - `npm run dev`: Inicia el bot en modo desarrollo.
 - `npm run build`: Genera una versión optimizada para producción.
-- `npm run start`: Inicia el bot en modo producción.
+- `npm start`: Inicia el bot en modo producción.
 
 ---
 
@@ -81,9 +81,10 @@ docker run -d --name mrjous-container \
 
 ## 🛠 Tecnologías
 
-- **Node.js**
-- **Discord.js** *(o la librería que estés usando)*
-- **Docker**
+- [Node.js](https://nodejs.org/en)
+- [Discord.js](https://discord.js.org/)
+- [Docker](https://www.docker.com/)
+- [Discord player](https://discord-player.js.org/)
 
 ---
 
