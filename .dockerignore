@@ -1,0 +1,18 @@
+# Ignorar dependencias locales
+node_modules
+npm-debug.log
+
+# Ignorar logs
+logs
+*.log
+
+# Ignorar directorios de compilación
+dist
+build
+
+# Ignorar otros archivos innecesarios
+.DS_Store
+.vscode
+.idea
+
+src/private

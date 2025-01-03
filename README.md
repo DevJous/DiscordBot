@@ -32,7 +32,7 @@ npm install
 
 ### 3. Configurar el archivo `.env`
 
-Crea un archivo `.env` en la raíz del proyecto y añade tus configuraciones personalizadas, como tu token y ID del cliente de Discord.
+Crea un archivo `.env` en la raíz del proyecto y añade tus configuraciones personalizadas, como tu token e ID del cliente de Discord.
 
 > [!NOTE]
 > Recuerda obtener el token y el ID de cliente en la página de [desarrolladores de Discord](https://discord.com/developers/applications).
@@ -57,24 +57,24 @@ DISCORD_CLIENT_ID="<Ingresa aqui tu Discord client Id>"
 ### 1. Construir la imagen
 
 ```bash
-docker build -t mrjous .
+docker build -t mrjousbot .
 ```
 
 ### 2. Ejecutar el contenedor
 
 ```bash
-docker run -d --name mrjous-container mrjous
+docker run -d --name mrjousbot-container mrjousbot
 ```
 
 ### 3. Configuración avanzada
 
-Si necesitas personalizar los puertos o variables de entorno:
+Recuerda haber creado el archivo `.env` en la raiz del proyecto y haber configurado el token e ID de cliente de Discord. Posteriormente ejecuta el siguiente comando:
 
 ```bash
-docker run -d --name mrjous-container \
+docker run -d --name mrjousbot-container \
   --env-file .env \
   -p 3000:3000 \
-  mrjous
+  mrjousbot
 ```
 
 ---

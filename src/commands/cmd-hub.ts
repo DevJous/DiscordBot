@@ -1,4 +1,3 @@
-import * as ytdlplay from './utility/music/ytdl-music-play.command';
 import * as search from './utility/music/search-music.command';
 import * as play from './utility/music/play-music.command';
 import * as stop from './utility/music/stop-music.command';
@@ -8,7 +7,6 @@ import * as shuffle from './utility/music/shuffle-music.command';
 
 export const commands = {
   ping,
-  ytdlplay,
   play,
   stop,
   skip,

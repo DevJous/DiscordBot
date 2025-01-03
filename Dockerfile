@@ -1,27 +1,15 @@
-# Usa una imagen base con Node.js
-FROM node:18
+FROM node:20
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
-#RUN apt-get clean
+RUN apt-get update && apt-get -y upgrade && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Crea un directorio de trabajo
 WORKDIR /usr/src/app
-
-# Copia los archivos de configuración del proyecto
-COPY package*.json tsconfig.json ./
-
-# Instala las dependencias del proyecto
+COPY package*.json ./
+#RUN npm ci --omit=dev
 RUN npm install
+COPY . .
+COPY .env .env
 
-# Copia el código fuente
-COPY src ./src
-
-# Compila el código TypeScript a JavaScript
 RUN npm run build
-
-# Establece el puerto si es necesario (opcional)
 EXPOSE 3000
 
-# Ejecuta el bot
 CMD ["npm", "start"]
