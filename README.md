@@ -72,7 +72,6 @@ Recuerda haber creado el archivo `.env` en la raiz del proyecto y haber configur
 
 ```bash
 docker run -d --name mrjousbot-container \
-  --env-file .env \
   -p 3000:3000 \
   mrjousbot
 ```
